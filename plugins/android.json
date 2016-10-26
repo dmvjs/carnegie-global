@@ -1,0 +1,55 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        },
+        "cordova-plugin-google-analytics": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        },
+        "br.com.dtmtec.plugins.carrier": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ceip.carnegie"
+        }
+    }
+}

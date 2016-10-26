@@ -1,0 +1,10 @@
+{
+    "CoreTelephony.framework": 2,
+    "AudioToolbox.framework": 2,
+    "SystemConfiguration.framework": 2,
+    "CoreData.framework": 2,
+    "libz.dylib": 2,
+    "libsqlite3.dylib": 2,
+    "Social.framework": 2,
+    "MessageUI.framework": 2
+}

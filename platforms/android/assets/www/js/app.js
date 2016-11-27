@@ -1955,6 +1955,9 @@ module.exports = (function () {
 
   if (parseInt(Math.min(w, h), 10) >= 550) {
 	  $('body').addClass('tablet');
+      screen.unlockOrientation();
+  } else {
+      screen.lockOrientation('portrait');
   }
 }());
 },{}],19:[function(require,module,exports){
@@ -2820,6 +2823,7 @@ module.exports = function (fileentry) {
 		};
 
 	return new Promise(function (resolve, reject) {
+		var platform = device.platform.toLowerCase();
 		var rejection = function (err) {
 			restoreHandler();
 			reject(err);
@@ -2829,18 +2833,23 @@ module.exports = function (fileentry) {
 		};
 		fileentry.file(function (f) {
 			reader.onloadend = function (s) {
-                var req = new XMLHttpRequest();
-                req.open('GET', s.target._result, false);
-                req.overrideMimeType('application\/json; charset=utf-8');
-                req.send(null);
-                s.target._result = req.responseText;
-
+                if (platform.indexOf('ios') > -1) {
+					var req = new XMLHttpRequest();
+					req.open('GET', s.target._result, false);
+					req.overrideMimeType('application\/json; charset=utf-8');
+					req.send(null);
+					s.target._result = req.responseText;
+				}
 			    restoreHandler();
                 resolve(s);
 			};
 			reader.onerror = rejection;
 
-			reader.readAsDataURL(f)
+			if (platform.indexOf('ios') > -1) {
+				reader.readAsDataURL(f)
+			} else {
+				reader.readAsText(f)
+			}
 		})
 	});
 };

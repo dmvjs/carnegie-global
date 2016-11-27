@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="30103" id="com.ceip.carnegie" ios-CFBundleVersion="2" version="3.1.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="30104" id="com.ceip.carnegie" ios-CFBundleVersion="2" version="3.1.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
@@ -43,6 +43,9 @@
     <feature name="NetworkStatus">
         <param name="ios-package" value="CDVConnection" />
     </feature>
+    <feature name="YoikScreenOrientation">
+        <param name="ios-package" value="YoikScreenOrientation" />
+    </feature>
     <feature name="SplashScreen">
         <param name="ios-package" value="CDVSplashScreen" />
         <param name="onload" value="true" />
@@ -85,8 +88,10 @@
     <icon height="144" src="res/ios/icon-72@2x.png" width="144" />
     <icon height="29" src="res/ios/icon-small.png" width="29" />
     <icon height="58" src="res/ios/icon-small@2x.png" width="58" />
+    <icon height="87" src="res/ios/icon-small@3x.png" width="87" />
     <icon height="50" src="res/ios/icon-50.png" width="50" />
     <icon height="100" src="res/ios/icon-50@2x.png" width="100" />
+    <icon height="167" src="res/ios/icon-83.5@2x.png" width="167" />
     <splash height="480" src="res/screen/ios/Default~iphone.png" width="320" />
     <splash height="960" src="res/screen/ios/Default@2x~iphone.png" width="640" />
     <splash height="1024" src="res/screen/ios/Default-Portrait~ipad.png" width="768" />
@@ -121,4 +126,5 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="100000" />
     <preference name="webviewbounce" value="false" />
+    <preference name="HeaderColor" value="#001c3d" />
 </widget>

@@ -111,5 +111,21 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-screen-orientation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-screen-orientation"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-headercolor": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-headercolor"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

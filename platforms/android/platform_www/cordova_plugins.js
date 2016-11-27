@@ -295,6 +295,30 @@ module.exports = [
         "clobbers": [
             "window.plugins.carrier"
         ]
+    },
+    {
+        "id": "cordova-plugin-screen-orientation.screenorientation",
+        "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
+        "pluginId": "cordova-plugin-screen-orientation",
+        "clobbers": [
+            "cordova.plugins.screenorientation"
+        ]
+    },
+    {
+        "id": "cordova-plugin-screen-orientation.screenorientation.android",
+        "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.android.js",
+        "pluginId": "cordova-plugin-screen-orientation",
+        "merges": [
+            "cordova.plugins.screenorientation"
+        ]
+    },
+    {
+        "id": "cordova-plugin-headercolor.HeaderColor",
+        "file": "plugins/cordova-plugin-headercolor/www/HeaderColor.js",
+        "pluginId": "cordova-plugin-headercolor",
+        "clobbers": [
+            "cordova.plugins.headerColor"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -313,7 +337,9 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-whitelist": "1.2.2",
     "cordova-plugin-x-socialsharing": "5.1.3",
-    "br.com.dtmtec.plugins.carrier": "1.0.0"
+    "br.com.dtmtec.plugins.carrier": "1.0.0",
+    "cordova-plugin-screen-orientation": "1.4.2",
+    "cordova-plugin-headercolor": "1.0"
 };
 // BOTTOM OF METADATA
 });

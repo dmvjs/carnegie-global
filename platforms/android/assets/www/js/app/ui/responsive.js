@@ -5,5 +5,8 @@ module.exports = (function () {
 
   if (parseInt(Math.min(w, h), 10) >= 550) {
 	  $('body').addClass('tablet');
+      screen.unlockOrientation();
+  } else {
+      screen.lockOrientation('portrait');
   }
 }());
